@@ -2,13 +2,12 @@
  1) Write a program that displays the message 'Hello, World!' on the screen
 */
 
-const readline = require('readline-sync');
+const readline = require("readline-sync");
 
-function helloWorld () {
-
+function helloWorld() {
   const message = "Hello World";
 
-  console.log(message)
+  console.log(message);
 }
 
 helloWorld();
