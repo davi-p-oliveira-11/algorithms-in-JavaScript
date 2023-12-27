@@ -10,8 +10,8 @@ const readline = require('readline-sync');
 
 function quitSmoking () {
   
-  const cigarsPerDay = parseInt(prompt('Quantos cigarros voce fuma por dia ? '));
-  const yearsSmoking = parseInt(prompt('Há quantos anos você fuma ? '));
+  const cigarsPerDay = parseInt(prompt('How many cigarettes do you smoke per day ? '));
+  const yearsSmoking = parseInt(prompt('For how many years have you been smoking ? '));
 
   const totalOfCigarretes = (cigarsPerDay * 365) * yearsSmoking; // 1 year = 365 days
 
@@ -19,7 +19,7 @@ function quitSmoking () {
 
   const daysLost =  minutesLost / 1440; // Minutes that fit in one day.
 
-  console.log(`Você perdeu já ${daysLost.toFixed(1)} dias de vida`);
+  console.log(`You have already lost ${daysLost.toFixed(1)} days of life.`);
 }
 
 quitSmoking();
