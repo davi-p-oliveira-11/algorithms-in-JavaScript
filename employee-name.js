@@ -6,16 +6,17 @@ Salary: 1850.45 USD
 Employee Jane Doe has a salary of R$1850.45 in June.
 */
 
-const prompt = require('prompt-sync')();
-const readline = require('readline-sync');
+const prompt = require("prompt-sync")();
+const readline = require("readline-sync");
 
-function employeeName () {
+function employeeName() {
+  const employeeName = prompt("What is the employee name ? ");
+  const salaryValue = parseFloat(
+    prompt("What is the value of the employee salary ? ")
+  );
 
-  const employeeName = prompt('What is the employee name ? ');
-  const salaryValue = parseFloat(prompt('What is the value of the employee salary ? ' ));
-
-  console.log(`Employee ${employeeName} has a salary of ${salaryValue} USD`)
+  console.log(`Employee ${employeeName} has a salary of ${salaryValue} USD`);
 }
 
 employeeName();
-readline.question();
+readline.question("Press Enter to Exit ... ");
