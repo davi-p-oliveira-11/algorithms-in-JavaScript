@@ -3,14 +3,18 @@
 100 95 90 85 80 ... 0 Done !
 */
 
-const readline = require('readline-sync');
+const readline = require("readline-sync");
 
-let counter = 100;
+function displayCountDown() {
+  let counter = 100;
 
-while (counter >= 0){
-  console.log(counter);
-  counter -= 5;
+  while (counter >= 0) {
+    console.log(counter);
+    counter -= 5;
+  }
+
+  console.log("Done !");
+  readline.question("Press Enter to Exit ... ");
 }
 
-console.log('Done !');
-readline.question();
+displayCountDown();
