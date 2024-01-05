@@ -3,14 +3,19 @@
 0 3 6 9 12 15 18 Done !
 */
 
-const readline = require('readline-sync');
+const readline = require("readline-sync");
 
-let counter = 0;
+function displayCountDown() {
+  let counter = 0;
 
-while (counter <= 18) {
-  console.log(counter);
-  counter +=3;
+  while (counter <= 18) {
+    console.log(counter);
+    counter += 3;
+  }
+
+  console.log("Done !");
+  readline.question('Press Enter to Exit ...');
 }
 
-console.log('Done !');
-readline.question();
+displayCountDown();
+
