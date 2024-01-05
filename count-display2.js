@@ -5,12 +5,16 @@
 
 const readline = require('readline-sync');
 
-let counter = 10;
+function displayCountDown() {
+  let counter = 10;
 
-while (counter >= 3) {
-  console.log(counter);
-  counter--
+  while (counter >= 3) {
+    console.log(counter);
+    counter--;
+  }
+
+  console.log("Done !");
+  readline.question('Press Enter to Exit ... ');
 }
 
-console.log('Done !');
-readline.question();
+displayCountDown();
