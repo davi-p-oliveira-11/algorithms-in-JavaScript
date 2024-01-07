@@ -4,29 +4,13 @@ soma, subtração, multiplicação, divisão, exponenciação e módulo
 entre eles.  
 */
 
-/* 
-Algoritmo
-1- Pedir ao usuário que digite um número
-   1.1 - Armazenar o valor em uma variável
-   1.2 - Converter a string em um número
-  2- Pedir ao usuário que digite outro número
-   2.1 - Armazenar o valor em uma variável
-   2.2 - Converter a string em um número
-  3 - Executar a soma dos números
-   3.1 - Armazenar o valor em uma variável
-  4 - Executar a subtração dos números
-    4.1 Armazenar o valor em uma variável
-  5 - Executar a multiplicacao dos numeros
-    5.1 Armazenar o valor em uma variável
-  6 - Executa a divisão dos numeros
-    6.1 Armazenar o valor em uma variável
-  7 - Executar a exponenciacao dos numeros
-    7.1 Armazenar o valor em uma variável
-  8 - Executar o módulo dos números
-    8.1 Armazenar o valor em uma variável
-  9 - Mostrar a mensagem com o resultado de 
-      todas as operações 
-  */
+function doOperations () {
+   
+}
+
+doOperations();
+
+//translate and then encapsulate the logic
 
 /* Bibliotecas */
 const prompt = require('prompt-sync')();
