@@ -1,35 +1,31 @@
 /*
-4.1) Desenvolva um algoritmo que leia dois números inteiros e mostre a
-soma, subtração, multiplicação, divisão, exponenciação e módulo
-entre eles.  
+4.1) Develop an algorithm that reads two integer numbers and shows the
+sum, subtraction, multiplication, division, exponentiation, and modulo
+between them.
 */
 
-function doOperations () {
-   
+const prompt = require("prompt-sync")();
+const readline = require("readline-sync");
+
+function operations() {
+  const num1 = parseInt(prompt("Enter a number "));
+  const num2 = parseInt(prompt("Enter another number: "));
+
+  const sum = num1 + num2;
+  const subtraction = num1 - num2;
+  const multiplication = num1 * num2;
+  const division = num1 / num2;
+  const exponentiation = num1 ** num2;
+  const modulo = num1 % num2;
+
+  console.log(`The sum of ${num1} and ${num2} is equal to ${sum}
+  The subtraction of ${num1} by ${num2} is equal to ${subtraction}
+  The multiplication of ${num1} by ${num2} is equal to ${multiplication}
+  The division of ${num1} by ${num2} is equal to ${division}
+  The exponentiation of ${num1} to the power of ${num2} is equal to ${exponentiation}
+  The modulo of ${num1} divided by ${num2} is equal to ${modulo}
+  `);
+  readline.question("Press Enter to Exit ... ");
 }
 
-doOperations();
-
-//translate and then encapsulate the logic
-
-/* Bibliotecas */
-const prompt = require('prompt-sync')();
-const readline = require('readline-sync');
-
-const num1 = parseInt(prompt('Digite um número '));
-const num2 = parseInt(prompt('Digite um outro número '));
-      
-const soma = num1 + num2;
-const subtracao = num1 - num2;
-const multiplicacao = num1 * num2;
-const divisao = num1 / num2;
-const exponenciacao = num1 ** num2;
-const modulo = num1 % num2;
-    
-console.log(`A soma de ${num1} e ${num2} é igual a ${soma}
-A subtração de ${num1} por ${num2} é igual a ${subtracao}
-A multiplicação de ${num1} por ${num2} é igual a ${multiplicacao}
-A divisao de ${num1} por ${num2} é igual a ${divisao}
-A exponenciacao de ${num1} por ${num2} é igual a ${exponenciacao}
-O módulo de ${num1} por ${num2} é igual a ${modulo} `);
-readline.question();
+operations();
